@@ -3,10 +3,36 @@
     <title>CSS簡介</title>
     <meta charset="UTF-8">
     <style>
-
-
-
-
+    p {
+        margin: 0;
+    }
+    div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+   span {
+        background-color: gray;
+   }
+   #sp1 {
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        display: inline;
+   }
+   #sp2 {
+        background-color: bisque;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+   }
+   #sp3 {
+       display: block;
+       width: 200px;
+       height: 200px;
+   }
+   .cs1 {
+       color: white;
+   }
 
 
 
@@ -16,9 +42,10 @@
 <body>
    <P>P段落</P>
    <div>區塊元素</div>
-   <span>行內元素</span>
-   <span>行內區塊元素</span>
-   <span>區塊元素</span>
+   <span id="sp1">行內元素</span>
+   <span id="sp2" class="cs2">行內區塊元素</span>
+   <span id="sp3" class="cs1 cs2">區塊元素</span>
+
 
 
 
