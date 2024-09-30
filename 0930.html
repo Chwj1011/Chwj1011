@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>漸層</title>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            width: 500px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        #d1 {
+            background: linear-gradient(90deg, bisque, white, cadetblue);
+        }
+        #d2 {
+            background: repeating-linear-gradient(40deg, bisque, white, cadetblue);
+        }
+        #d3 {
+            background: radial-gradient(circle, bisque, white, cadetblue);
+        }
+        #d4 {
+            background: repeating-linear-gradient(bisque, white, cadetblue);
+        }
+        #d5 {
+            background: repeating-conic-gradient(bisque,white,cadetblue );
+        }
+
+        @keyframes k1 {
+            0% {background: linear-gradient(90deg,bisque, white, cadetblue);}
+            26% {background: linear-gradient(180deg,bisque, white, cadetblue);}
+            39% {background: linear-gradient(270deg,bisque, white, cadetblue);}
+            57% {background: linear-gradient(360deg,bisque, white, cadetblue);}
+            61% {background: linear-gradient(450deg,bisque, white, cadetblue);}
+            71% {background: linear-gradient(540deg,bisque, white, cadetblue);}
+            88% {background: linear-gradient(630deg,bisque, white, cadetblue);}
+            99% {background: linear-gradient(720deg,bisque, white, cadetblue);}
+            100% {background: linear-gradient(810deg,bisque, white, cadetblue);}
+
+
+
+        }
+        #a1 {
+            animation: k1 2s infinite linear;
+        }
+        @keyframes k2 {
+
+
+        }
+        #a2 {
+            animation: k 1s infinite linear;
+        }
+        #a3 {
+            animation: k 1s infinite linear;
+        }
+        #a4 {
+            animation: k 1s infinite linear;
+        }
+        #a5 {
+            animation: k 1s infinite linear;
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div id='d1'></div>
+    <div id='d2'></div>
+    <div id='d3'></div>
+    <div id='d4'></div>
+    <div id='d5'></div>
+    <div id='a1'></div>
+    <div id='a2'></div>
+    <div id='a3'></div>
+    <div id='a4'></div>
+    <div id='a5'></div>
+</body>
+</html>
