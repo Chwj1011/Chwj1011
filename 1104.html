@@ -10,7 +10,17 @@
         function getRandNum(min,max) {
             return Math.floor(Math.random()*(max-min+1))+min;
         }
-        function rollingDice
+        function rollingDice() {
+            dice=getRandNum(1,6);
+            get("dice").src="pic/"+dice+".png";
+        }
+        function setInterval() {
+            if(t1=0) {
+                t1=setInterval(rollingDice,50);
+                setTimeout(stopInterval,30)
+            }
+            
+        }, interval);
 
     </script>
 
